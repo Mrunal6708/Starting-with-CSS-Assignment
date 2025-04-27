@@ -1,0 +1,15 @@
+/* External CSS file */
+
+*{
+    letter-spacing: 2px;  /*Selects all elements*/
+}
+
+.box{
+    background-color: #AAECFC;
+    color: rgb(210, 203, 203);
+    height: 50%;
+    width: 25%  ;
+    font-size: 70px;
+    text-align: center;            /* Styling for the box using internal CSS */
+    border: 5px solid #88A3E2;
+ }

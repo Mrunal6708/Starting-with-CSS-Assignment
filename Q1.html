@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Priority Example</title>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="Q1.css">
+
+    <!-- Internal CSS -->
+    <style>
+
+         /* Internal CSS: Targeting the div */
+
+        #boxone{
+           background-color:#FC8DCA ;
+           color: whitesmoke;
+        }
+
+        /* Styling for the div using internal CSS */
+         div{
+            padding: 10px;
+            margin: 20px;
+            background-color: black;
+            font-size: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Simple div with inline CSS -->
+    <div id="boxone" class="box">Box One</div>
+
+    <div class="box">Box Two</div>
+
+    <div class="box" style="background-color: #C37EDB ; color: azure;">Box Three</div>
+    <!-- Inline CSS will override internal and external -->
+</body>
+</html>

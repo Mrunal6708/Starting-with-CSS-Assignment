@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Paragraphs with BEM</title>
+    <style>
+        .paragraph{  /* Base class for all paragraphs */
+           margin-bottom: 10px;
+           padding: 12px;
+           border: 7px solid #BFBFBF;
+           color: #F2F2F2;
+        }
+        
+        .paragraph--intro{ /* Modifier for the introductory paragraph */
+            font-size: 1.2em;
+            font-weight: bolder;
+            background-color: #404040;
+        }
+
+        .paragraph--body--fist{ /* Modifier for the body fist paragraph */
+            line-height: 1.5;
+            background-color: #404040;
+        }
+        .paragraph--body--second{/* Modifier for the body second paragraph */
+            font-style: italic;
+            background-color: #404040;
+        }
+
+        .paragraph--conclusion{ /* Modifier for the conclusion paragraph */
+            text-align: center;
+            font-size: 0.9em;
+            background-color: #404040;
+        }
+    </style>
+</head>
+<body>
+    <p class="paragraph paragraph--intro">This is the introduction paragraph</p>
+
+    <p class="paragraph paragraph--body--fist">This paragraph is highlighted with a different background.</p>
+
+    <p class="paragraph paragraph--body--second">This paragraph shows a warning style.</p>
+
+    <p class="paragraph paragraph--conclusion">This paragraph shows a success message style.</p>
+</body>
+</html>
